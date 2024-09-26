@@ -5,14 +5,14 @@ import {add} from './calc.test.mjs';
 describe('Calculator', () => {
     it('should add correctly', () => {
         // Arrange
-        const a = 1;
-        const b = 1;
+        const a = 5;
+        const b = 9;
 
         // Act
         const expectedVal = add(a, b);
 
         // Assert
-        const actualVal = 2;
+        const actualVal = a + b;
         expect(expectedVal).toBe(actualVal);
     });
 
