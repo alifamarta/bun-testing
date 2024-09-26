@@ -9,10 +9,11 @@ describe('Calculator', () => {
         const b = 1;
 
         // Act
-        const res = add(a, b);
+        const expectedVal = add(a, b);
 
         // Assert
-        expect(res).toBe(2);
+        const actualVal = 2;
+        expect(expectedVal).toBe(actualVal);
     });
 
     it('should throw an error if string passed on a parameter', () => {
